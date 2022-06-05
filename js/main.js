@@ -136,6 +136,26 @@ $(function ($) {
         });
     }
     /*========================
+        featured post
+   ==========================*/
+    if ($('#featured-slider-visit').length > 0) {
+        $('#featured-slider-visit').owlCarousel({
+            loop: true,
+            items: 1,
+            dots: false,
+            nav: true,
+            // autoplayTimeout: 5000,
+            slideSpeed: 10000,
+            // autoplay: true,
+            // animateOut: 'slideOutRight',
+            autoplayHoverPause: true,
+            mouseDrag: false,
+            touchDrag: false,
+            responsiveClass: true,
+            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+        });
+    }
+    /*========================
         featured slider 2
    ==========================*/
     if ($('#featured-slider-2').length > 0) {
