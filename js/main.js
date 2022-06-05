@@ -1,8 +1,8 @@
 /*
-	Template Name: Vinazine
-	Author: Themewinter
-	Author URI: https://themeforest.net/user/tripples
-	Description: vinazine
+    Template Name: Vinazine
+    Author: Themewinter
+    Author URI: https://themeforest.net/user/tripples
+    Description: vinazine
    Version: 1.0
 
    ================================
@@ -24,7 +24,7 @@ $(function ($) {
 
 
 
-    $(window).on('load', function() {
+    $(window).on('load', function () {
 
         /*==========================================================
                     4. Preloader
@@ -34,12 +34,12 @@ $(function ($) {
         }, 1000);
     });
 
-    $('.preloader-cancel-btn').on('click', function(event) {
-		event.preventDefault();
-		if (!$('#preloader').hasClass('loaded')) {
-			$('#preloader').addClass('loaded');
-		}
-   });
+    $('.preloader-cancel-btn').on('click', function (event) {
+        event.preventDefault();
+        if (!$('#preloader').hasClass('loaded')) {
+            $('#preloader').addClass('loaded');
+        }
+    });
 
 
 
@@ -47,18 +47,18 @@ $(function ($) {
     /**-------------------------------------------------
      *Fixed HEader
      *----------------------------------------------------**/
-       $(window).on('scroll', function () {
+    $(window).on('scroll', function () {
 
-            /**Fixed header**/
-            if ($(window).scrollTop() > 250) {
-               $('.ts-menu-sticky').addClass('sticky fade_down_effect');
-            } else {
-               $('.ts-menu-sticky').removeClass('sticky fade_down_effect');
-            }
-      });
+        /**Fixed header**/
+        if ($(window).scrollTop() > 250) {
+            $('.ts-menu-sticky').addClass('sticky fade_down_effect');
+        } else {
+            $('.ts-menu-sticky').removeClass('sticky fade_down_effect');
+        }
+    });
 
-     /* ----------------------------------------------------------- */
-	/*  index search
+    /* ----------------------------------------------------------- */
+    /*  index search
     /* ----------------------------------------------------------- */
 
     if ($(".header-search").length > 0) {
@@ -111,7 +111,7 @@ $(function ($) {
             autoplay: true,
             autoplayHoverPause: true,
             mouseDrag: false,
-            touchDrag:false
+            touchDrag: false
         })
     }
 
@@ -124,13 +124,13 @@ $(function ($) {
             items: 1,
             dots: false,
             nav: true,
-            autoplayTimeout: 5000,
+            // autoplayTimeout: 5000,
             slideSpeed: 10000,
-            autoplay: true,
+            // autoplay: true,
             // animateOut: 'slideOutRight',
             autoplayHoverPause: true,
             mouseDrag: false,
-            touchDrag:false,
+            touchDrag: false,
             responsiveClass: true,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
@@ -145,9 +145,9 @@ $(function ($) {
             dots: true,
             nav: false,
             responsiveClass: true,
-             autoplayHoverPause: true,
+            autoplayHoverPause: true,
             mouseDrag: false,
-            touchDrag:false,
+            touchDrag: false,
             animateOut: 'slideOutLeft',
 
         });
@@ -164,7 +164,7 @@ $(function ($) {
             autoplay: true,
             autoplayHoverPause: true,
             mouseDrag: false,
-            touchDrag:false,
+            touchDrag: false,
             responsiveClass: true,
         });
     }
@@ -181,7 +181,7 @@ $(function ($) {
             responsiveClass: true,
             autoplayHoverPause: true,
             mouseDrag: false,
-            touchDrag:false,
+            touchDrag: false,
             navText: ["<i class='icon-arrow-left'></i>", "<i class='icon-arrow-right'></i>"],
         });
     }
@@ -197,7 +197,7 @@ $(function ($) {
             autoplay: true,
             autoplayHoverPause: true,
             mouseDrag: false,
-            touchDrag:false,
+            touchDrag: false,
             responsiveClass: true,
         });
     }
@@ -212,7 +212,7 @@ $(function ($) {
             nav: true,
             autoplayHoverPause: true,
             mouseDrag: false,
-            touchDrag:false,
+            touchDrag: false,
             margin: 30,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
             responsive: {
@@ -237,7 +237,7 @@ $(function ($) {
     }
 
 
-      // Topics UK
+    // Topics UK
     if ($('.most-populers').length > 0) {
         $('.most-populers').owlCarousel({
             items: 4,
@@ -246,7 +246,7 @@ $(function ($) {
             nav: false,
             autoplayHoverPause: true,
             mouseDrag: false,
-            touchDrag:false,
+            touchDrag: false,
             margin: 30,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
             responsive: {
@@ -271,7 +271,7 @@ $(function ($) {
     }
 
 
-      // Topics UK
+    // Topics UK
     /*========================
         hot topics
    ==========================*/
@@ -284,7 +284,7 @@ $(function ($) {
             dots: true,
             autoplayHoverPause: true,
             mouseDrag: false,
-            touchDrag:false,
+            touchDrag: false,
             responsive: {
                 // breakpoint from 0 up
                 0: {
@@ -318,7 +318,7 @@ $(function ($) {
             slideSpeed: 600,
             autoplayHoverPause: true,
             mouseDrag: false,
-            touchDrag:false,
+            touchDrag: false,
             responsive: {
                 // breakpoint from 0 up
                 0: {
@@ -341,8 +341,8 @@ $(function ($) {
         });
     }
 
-     /* ----------------------------------------------------------- */
-	/*  hero banner slider on sport index
+    /* ----------------------------------------------------------- */
+    /*  hero banner slider on sport index
     /* ----------------------------------------------------------- */
     if ($("#hero-slider").length > 0) {
         $("#hero-slider").owlCarousel({
@@ -354,7 +354,7 @@ $(function ($) {
             items: 1,
             autoplayHoverPause: true,
             mouseDrag: false,
-            touchDrag:false,
+            touchDrag: false,
             animateOut: 'slideOutLeft',
             navText: ["<i class='icon-arrow-left'></i>", "<i class='icon-arrow-right'></i>"],
         });
@@ -363,43 +363,43 @@ $(function ($) {
         $('#hero-slider .owl-nav').wrap('<div class="container slider-arrow-item"><div class="row"><div class="col-lg-9"></div></div></div>');
     }
     /* ----------------------------------------------------------- */
-	/*  post slider
+    /*  post slider
     /* ----------------------------------------------------------- */
 
     $("#post-slider1").owlCarousel({
-         margin: 10,
-         loop: true,
-         dots: false,
-         nav: true,
-         autoplay: true,
-         autoplaySpeed: 3000,
-         items: 1,
-         autoplayHoverPause: true,
-         mouseDrag: false,
-         touchDrag:false,
-         animateOut: 'fadeOut',
-         navText: ["<i class='icon-arrow-left'></i>", "<i class='icon-arrow-right'></i>"],
+        margin: 10,
+        loop: true,
+        dots: false,
+        nav: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        items: 1,
+        autoplayHoverPause: true,
+        mouseDrag: false,
+        touchDrag: false,
+        animateOut: 'fadeOut',
+        navText: ["<i class='icon-arrow-left'></i>", "<i class='icon-arrow-right'></i>"],
     });
 
     /* ----------------------------------------------------------- */
-	/*  blog post slider for blog page
+    /*  blog post slider for blog page
     /* ----------------------------------------------------------- */
 
     $(".blog-post-slider-item").owlCarousel({
-         margin: 10,
-         dots: false,
-         nav: true,
-         items: 1,
-         autoplayHoverPause: true,
-         mouseDrag: false,
-         touchDrag:false,
-         animateOut: 'fadeOut',
-         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        margin: 10,
+        dots: false,
+        nav: true,
+        items: 1,
+        autoplayHoverPause: true,
+        mouseDrag: false,
+        touchDrag: false,
+        animateOut: 'fadeOut',
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
     });
 
     /* ----------------------------------------------------------- */
-	/*  marquee slider
-	/* ----------------------------------------------------------- */
+    /*  marquee slider
+    /* ----------------------------------------------------------- */
     if ($('.slick.marquee').length > 0) {
         $('.slick.marquee').slick({
             speed: 5000,
@@ -417,8 +417,8 @@ $(function ($) {
         });
     }
     /* ----------------------------------------------------------- */
-	/*  breking news slider
-	/* ----------------------------------------------------------- */
+    /*  breking news slider
+    /* ----------------------------------------------------------- */
     if ($('#breaking_slider1').length > 0) {
         $('#breaking_slider1').slick({
             speed: 10000,
@@ -440,8 +440,8 @@ $(function ($) {
 
 
     /* ----------------------------------------------------------- */
-	/*  Popup
-	/* ----------------------------------------------------------- */
+    /*  Popup
+    /* ----------------------------------------------------------- */
 
     if ($('.gallery-popup').length > 0) {
         $('.gallery-popup').magnificPopup({
@@ -461,7 +461,7 @@ $(function ($) {
     }
 
     /* ----------------------------------------------------------- */
-	/*  single post video
+    /*  single post video
     /* ----------------------------------------------------------- */
     if ($('.ts-play-btn').length > 0) {
         $('.ts-play-btn').magnificPopup({
@@ -575,19 +575,19 @@ $(function ($) {
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
-             $('#back-to-top').fadeIn();
+            $('#back-to-top').fadeIn();
         } else {
-             $('#back-to-top').fadeOut();
+            $('#back-to-top').fadeOut();
         }
     });
 
     // scroll body to 0px on click
     $('#back-to-top').on('click', function () {
-         $('#back-to-top').tooltip('hide');
-         $('body,html').animate({
-              scrollTop: 0
-         }, 800);
-         return false;
+        $('#back-to-top').tooltip('hide');
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
     });
 
     $('#back-to-top').tooltip('hide');
@@ -596,3 +596,78 @@ $(function ($) {
 
 
 });
+
+
+
+$('.popup-youtube').magnificPopup({
+    type: 'iframe',
+    iframe: {
+        markup: '<div class="mfp-iframe-scaler">' + '<div class="mfp-close"></div>' + '<iframe class="mfp-iframe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>' + "</div>",
+        patterns: {
+            youtube: {
+                index: 'youtube.com/',
+                id: "v=",
+                src: 'https://www.youtube.com/embed/%id%?autoplay=1',
+            },
+        },
+        srcAction: "iframe_src",
+    },
+});
+
+
+
+(function ($) {
+    "use strict";
+
+    //Switch dark/light
+
+    $(".switch").on('click', function () {
+        if ($("body").hasClass("light")) {
+            $("body").removeClass("light");
+            $(".switch").removeClass("switched");
+        }
+        else {
+            $("body").addClass("light");
+            $(".switch").addClass("switched");
+        }
+    });
+
+    $(document).ready(function () {
+        "use strict";
+
+        //Scroll back to top
+
+        var progressPath = document.querySelector('.progress-wrap path');
+        var pathLength = progressPath.getTotalLength();
+        progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+        progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+        progressPath.style.strokeDashoffset = pathLength;
+        progressPath.getBoundingClientRect();
+        progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+        var updateProgress = function () {
+            var scroll = $(window).scrollTop();
+            var height = $(document).height() - $(window).height();
+            var progress = pathLength - (scroll * pathLength / height);
+            progressPath.style.strokeDashoffset = progress;
+        }
+        updateProgress();
+        $(window).scroll(updateProgress);
+        var offset = 50;
+        var duration = 550;
+        jQuery(window).on('scroll', function () {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery('.progress-wrap').addClass('active-progress');
+            } else {
+                jQuery('.progress-wrap').removeClass('active-progress');
+            }
+        });
+        jQuery('.progress-wrap').on('click', function (event) {
+            event.preventDefault();
+            jQuery('html, body').animate({ scrollTop: 0 }, duration);
+            return false;
+        })
+
+
+    });
+
+})(jQuery);

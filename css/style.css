@@ -461,11 +461,12 @@ section,
   border-color: #4d4d70;
 }
 
-#featured-slider .owl-nav {
+/* #featured-slider .owl-nav {
   position: absolute;
   right: 0;
   top: 0;
-}
+} */
+
 
 #featured-slider .owl-nav .owl-prev:before {
   position: absolute;
@@ -479,17 +480,55 @@ section,
   margin: auto;
 }
 
+#featured-slider .owl-nav .owl-prev:before {
+  position: absolute;
+  right: -11px;
+  top: 0px;
+  width: 1px;
+  height: 15px;
+  background: transparent;
+  content: '';
+  bottom: 0;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
 #featured-slider .owl-nav .owl-prev,
 #featured-slider .owl-nav .owl-next {
   font-size: 14px;
-  background: #00386c;
+  /* background: rgba(0, 56, 108, .4); */
   color: #fff;
-  width: 28px;
-  height: 28px;
+  width: 38px;
+  height: 58px;
   display: inline-block;
-  position: relative;
   margin: 0;
 }
+
+#featured-slider .owl-nav {
+  position: absolute;
+  top: 46%;
+  left: 0;
+}
+
+#featured-slider .owl-nav i {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+#featured-slider .owl-nav .owl-prev {
+  position: absolute;
+  top: 48%;
+  left: 0;
+}
+
+#featured-slider .owl-nav .owl-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
 
 /* post meta --*/
 .post-meta-info {
@@ -8163,6 +8202,114 @@ featured tab personal blog
 
 
 /* Custom Code */
+.live_pc {
+  padding: 0;
+}
+
+.live_section {
+  padding: 10px;
+}
+
+.live_section .ts-title:before {
+  left: -10px;
+
+}
+
+.live-icon {
+  width: 20%;
+}
+
+.live_video {}
+
+.live_video .tmb_video {}
+
+.live_video .tmb_video img {
+  width: 100%;
+}
+
+.play_button i {
+  position: absolute;
+  top: 56%;
+  left: 41%;
+  z-index: 3;
+  font-size: 23px;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  padding: 13px 19px;
+  background: #d72924;
+  cursor: pointer;
+}
+
+.bg_anim {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: #d72924;
+  z-index: 2;
+  border-radius: 100%;
+  top: 56%;
+  left: 41%;
+  opacity: 80%;
+  animation: playButton 2s infinite ease-in-out;
+  /* animation-delay: 10s; */
+  /* animation-iteration-count: infinite; */
+
+}
+
+@keyframes playButton {
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+
+  0% {
+    transform: scale(0);
+  }
+}
+
+
+.most-populers2 {
+  padding-bottom: 15px;
+}
+
+.most-populers2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.district-3 {
+  padding-top: 20px;
+  ;
+}
+
+.district-3 .ts-cat-title span:before {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  content: '';
+  background: #fff;
+  right: -20px;
+  top: 0;
+}
+
+.district-3 .ts-list-post-box.ts-grid-content .post-content {
+  padding-top: 20px;
+  padding-bottom: 0px;
+
+}
+
+.district-3 .post-title.md {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
 .diet_nutrion .post-cat {}
 
 .head-post.ts-post-thumb {
