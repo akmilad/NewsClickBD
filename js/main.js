@@ -260,7 +260,7 @@ $(function ($) {
                 },
                 // breakpoint from 768 up
                 768: {
-                    items: 2,
+                    items: 3,
                 },
                 // breakpoint from 768 up
                 1200: {

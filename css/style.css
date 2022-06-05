@@ -512,7 +512,7 @@ section,
 }
 
 #featured-slider .owl-nav i {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 50px;
 }
 
@@ -8413,4 +8413,77 @@ body.light .progress-wrap::after {
 
 body.light .progress-wrap svg.progress-circle path {
   stroke: var(--black-blue);
+}
+
+.latest_post_tab .post-title {
+  font-size: 12px;
+
+}
+
+.latest_post_tab .post-content {
+
+  padding: 8px 8px;
+}
+
+.facebook_Page {
+  padding-top: 20px;
+  ;
+}
+
+.politics .ts-post-thumb {
+  margin-bottom: 10px !important;
+}
+
+.politics .item {
+  margin-bottom: 15px !important;
+}
+
+.politics .ts-title {
+  margin-bottom: 15px;
+}
+
+.national_politics .nationals {
+  padding: 50px 30px;
+
+}
+
+.video_slide .play_button i {
+  top: 36%;
+  left: 41%;
+}
+
+.video_slide .bg_anim {
+  top: 36%;
+  left: 41%;
+}
+
+
+.wd_news {
+  padding: 20px 10px 10px 10px;
+}
+
+.wd-post-thumb .img-fluid {
+  width: 100%;
+}
+
+.wd-post-thumb {
+  width: 40%;
+}
+
+.post-content-text {
+  width: 60%;
+}
+
+.post-content-text .post-content {
+  text-align: justify;
+}
+
+.post-content-text .post-title.md {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+.post-content-text .post-title span {
+  color: #585858;
 }
