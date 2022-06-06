@@ -43,6 +43,9 @@
 
 	<link rel="stylesheet" href="css/colors/color-0.css">
 
+
+	<link rel="stylesheet" href="lightBox/lightgallery.css">
+
 	<!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Style -->
@@ -3171,6 +3174,49 @@
 	</section>
 	<!-- Media Content -->
 
+
+	<!-- photo Feature Opne Modal -->
+	<div id="myModal" class="modal">
+		<span class="closeBtn cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2">
+					<div class="modal-img">
+						<div class="mySlides">
+							<div class="numbertext">1 / 3</div>
+							<img onclick="currentSlide(1)" src="images/gallery/gallery3.jpg" style="width:100%">
+							<div class="img_tag">
+								<h4> বেশিরভাগ মানুষ তাদের লক্ষ্য পূরণ করতে পারে না</h4>
+							</div>
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 3</div>
+							<img onclick="currentSlide(2)" src="images/gallery/gallery4.jpg" style="width:100%">
+							<div class="img_tag">
+								<h4> আমার অভিজ্ঞতা বলে শ্রেষ্ঠ মোটিভেশন হল সত্যিকার ইচ্ছা। </h4>
+							</div>
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 3</div>
+							<img onclick="currentSlide(3)" src="images/gallery/gallery5.jpg" style="width:100%">
+							<div class="img_tag">
+								<h4> কখনও না পড়ে যাওয়ার মাঝে বীরত্ব নেই </h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+	</div>
+	<!-- photo Feature Opne Modal -->
+
+
 	<!-- Free Comments -->
 	<section class="block-wrapper">
 		<div class="container">
@@ -3233,21 +3279,76 @@
 								</h3>
 							</div>
 						</div>
+
 					</div>
 					<!-- col end-->
-					<div class="col-lg-3 col-md-3">
-						<div class="ts-title-item item-2">
+					<div class="col-lg-6 col-md-6">
+						<div class="ts-title-item item-3">
 							<h2 class="ts-cat-title ">
-								<span> চাকুরী </span>
+								<span> ফটো ফিচার </span>
 							</h2>
 						</div><!-- Title end -->
-						<div class="post-list-box ts-list-post-box ts-grid-content">
+						<div id="featured-slider-photo" class="owl-carousel ts-overlay-style ts-featured">
+							<div onclick="openModal();currentSlide(1)" class="item"
+								style="background-image:url(images/gallery/gallery3.jpg)">
+
+								<div class="photo_tag">
+									<div class="post-content">
+										<h4 class="post-title lg">
+											<a href="#">বোতল থেকে ড্রামে ঢেলে খোলা তেল হিসেবে বেশি দামে বিক্রি</a>
+										</h4>
+
+									</div>
+								</div>
+								<!--/ Featured post end -->
+
+							</div>
+							<!-- Item 1 end -->
+							<div onclick="openModal();currentSlide(2)" class="item"
+								style="background-image:url(images/gallery/gallery4.jpg)">
+
+								<div class="photo_tag">
+									<div class="post-content">
+										<h4 class="post-title lg">
+											<a href="#">এবার মুখ খুললেন শাকিব খান </a>
+										</h4>
+
+									</div>
+								</div>
+								<!--/ Featured post end -->
+							</div>
+							<!-- Item 2 end -->
+
+							<div onclick="openModal();currentSlide(3)" class="item"
+								style="background-image:url(images/gallery/gallery5.jpg)">
+
+								<div class="photo_tag">
+									<div class="post-content">
+										<h4 class="post-title lg">
+											<a href="#">কিংবদন্তি সন্তুরবাদক শিবকুমার শর্মা আর নেই </a>
+										</h4>
+
+									</div>
+								</div>
+								<!--/ Featured post end -->
+							</div>
+							<!-- Item 3 end -->
+						</div>
+					</div>
+
+					<div class="col-lg-3">
+						<div class="ts-title-item item-4">
+							<h2 class="ts-cat-title ">
+								<span> শিল্প ও সাহিত্য </span>
+							</h2>
+						</div><!-- Title end -->
+						<div class="post-list-box post-managed ts-list-post-box ts-grid-content">
 
 							<div class="ts-overlay-style">
 								<div class="item">
 									<div class="ts-post-thumb">
 										<a href="#">
-											<img class="img-fluid" src="images/news/travel/travel1.jpg" alt="">
+											<img class="img-fluid" src="images/news/travel/travel4.jpg" alt="">
 										</a>
 
 									</div>
@@ -3255,9 +3356,8 @@
 										<div class="post-content">
 
 											<h3 class="post-title md">
-												<a href="#"> টিপ সবুজের মায়াবী জমিনে লাল সূর্যের টিপে আমাদের
-													ভোর
-													নামে, </a>
+												<a href="#"> এক. অট্টালিকার নাম ‘পাখির পথে’। এক শ ত্রিশ তলা উঁচু
+													অট্টালিকা। </a>
 											</h3>
 										</div>
 									</div>
@@ -3271,7 +3371,7 @@
 								</a>
 								<div class="media-body align-self-center">
 									<h3 class="post-title">
-										<a href="#"> বিস্কুটটায় একটা কামড়, মাত্র একটা কামড় দিয়েই বললাম</a>
+										<a href="#"> করুন স্বাস্থ্য আপনি ওজন কমাতে চাইলে খাবারে চিনি </a>
 									</h3>
 									<span class="post-date-info">
 										<i class="fa fa-clock-o"></i>
@@ -3280,13 +3380,30 @@
 								</div>
 							</div>
 							<!-- end item-->
+
+							<div class="post-content media">
+								<a href="#">
+									<img class="d-flex" src="images/news/travel/travel2.jpg" alt="">
+								</a>
+								<div class="media-body align-self-center">
+									<h3 class="post-title">
+										<a href="#"> করুন স্বাস্থ্য আপনি ওজন কমাতে চাইলে খাবারে চিনি </a>
+									</h3>
+									<span class="post-date-info">
+										<i class="fa fa-clock-o"></i>
+										dd/mm/yyyy
+									</span>
+								</div>
+							</div>
+							<!-- end item-->
+
 							<div class="post-content media">
 								<a href="#">
 									<img class="d-flex" src="images/news/travel/travel3.jpg" alt="">
 								</a>
 								<div class="media-body align-self-center">
 									<h3 class="post-title">
-										<a href="#"> শরীরে ভিটামিন B12-র ঘাটতিতে হতে পারে 'বিপদ</a>
+										<a href="#"> শরীরে ভিটামিন B12-র ঘাটতিতে হতে পারে 'বিপদ' </a>
 									</h3>
 									<span class="post-date-info">
 										<i class="fa fa-clock-o"></i>
@@ -3294,650 +3411,18 @@
 									</span>
 								</div>
 							</div>
-							<!-- end item-->
 
 							<!-- end item-->
-						</div>
-					</div>
-					<!-- col end-->
-					<div class="col-lg-3 col-md-3">
-						<div class="ts-title-item item-3">
-							<h2 class="ts-cat-title ">
-								<span> কৃষি </span>
-							</h2>
-						</div><!-- Title end -->
-						<div class="post-list-box ts-list-post-box ts-grid-content">
-
-							<div class="ts-overlay-style">
-								<div class="item">
-									<div class="ts-post-thumb">
-										<a href="#">
-											<img class="img-fluid" src="images/news/travel/travel2.jpg" alt="">
-										</a>
-
-									</div>
-									<div class="overlay-post-content">
-										<div class="post-content">
-
-											<h3 class="post-title md">
-												<a href="#"> শরীরে ভিটামিন B12-র ঘাটতিতে হতে পারে 'বিপদ',
-													জেনে
-													নিন
-													কী কী খাবেন </a>
-											</h3>
-										</div>
-									</div>
-								</div>
-								<!-- end item-->
-							</div>
-
-							<div class="post-content media">
-								<a href="#">
-									<img class="d-flex" src="images/news/travel/travel4.jpg" alt="">
-								</a>
-								<div class="media-body align-self-center">
-									<h3 class="post-title">
-										<a href="#"> শরীর ও মনকে সুস্থ্য রাখতে প্রতিদিন হাল্কা ব্যায়াম করুন
-										</a>
-									</h3>
-									<span class="post-date-info">
-										<i class="fa fa-clock-o"></i>
-										dd/mm/yyyy
-									</span>
-								</div>
-							</div>
-							<!-- end item-->
-							<div class="post-content media">
-								<a href="#">
-									<img class="d-flex" src="images/news/travel/travel3.jpg" alt="">
-								</a>
-								<div class="media-body align-self-center">
-									<h3 class="post-title">
-										<a href="#"> শরীর ও মনকে সুস্থ্য রাখতে প্রতিদিন হাল্কা ব্যায়াম করুন
-										</a>
-									</h3>
-									<span class="post-date-info">
-										<i class="fa fa-clock-o"></i>
-										dd/mm/yyyy
-									</span>
-								</div>
-							</div>
-							<!-- end item-->
-
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3">
-						<div class="ts-title-item item-3">
-							<h2 class="ts-cat-title ">
-								<span> ইসলাম </span>
-							</h2>
-						</div><!-- Title end -->
-						<div class="post-list-box ts-list-post-box ts-grid-content">
-
-							<div class="ts-overlay-style">
-								<div class="item">
-									<div class="ts-post-thumb">
-										<a href="#">
-											<img class="img-fluid" src="images/news/travel/travel2.jpg" alt="">
-										</a>
-
-									</div>
-									<div class="overlay-post-content">
-										<div class="post-content">
-
-											<h3 class="post-title md">
-												<a href="#"> শরীরে ভিটামিন B12-র ঘাটতিতে হতে পারে 'বিপদ',
-													জেনে
-													নিন
-													কী কী খাবেন </a>
-											</h3>
-										</div>
-									</div>
-								</div>
-								<!-- end item-->
-							</div>
-
-							<div class="post-content media">
-								<a href="#">
-									<img class="d-flex" src="images/news/travel/travel4.jpg" alt="">
-								</a>
-								<div class="media-body align-self-center">
-									<h3 class="post-title">
-										<a href="#"> শরীর ও মনকে সুস্থ্য রাখতে প্রতিদিন হাল্কা ব্যায়াম করুন
-										</a>
-									</h3>
-									<span class="post-date-info">
-										<i class="fa fa-clock-o"></i>
-										dd/mm/yyyy
-									</span>
-								</div>
-							</div>
-							<!-- end item-->
-							<div class="post-content media">
-								<a href="#">
-									<img class="d-flex" src="images/news/travel/travel3.jpg" alt="">
-								</a>
-								<div class="media-body align-self-center">
-									<h3 class="post-title">
-										<a href="#"> শরীর ও মনকে সুস্থ্য রাখতে প্রতিদিন হাল্কা ব্যায়াম করুন
-										</a>
-									</h3>
-									<span class="post-date-info">
-										<i class="fa fa-clock-o"></i>
-										dd/mm/yyyy
-									</span>
-								</div>
-							</div>
-							<!-- end item-->
-
 						</div>
 					</div>
 
 				</div>
 			</div>
-		</div>
-		<!-- container end-->
+			<!-- container end-->
 	</section>
 	<!-- Free Comments -->
 
 
-
-
-	<section class="block-wrapper block-wrapper-1 p-50">
-		<div class="container">
-			<div class="ts-title-item">
-				<h2 class="ts-title">
-					<span>সংবাদ</span>
-				</h2>
-			</div>
-			<div class="row latest-post-item">
-				<div class="col-lg-3 col-md-6">
-					<div class="ts-grid-box ts-grid-content border-style">
-						<div class="ts-post-thumb">
-							<a href="#">
-								<img class="img-fluid" src="images/news/travel/travel1.jpg" alt="">
-							</a>
-						</div>
-						<div class="post-content">
-							<a class="post-cat" href="#"> জাতীয় </a>
-							<h3 class="post-title">
-								<a href="#">শরীরে ভিটামিন B12-র ঘাটতিতে হতে পারে 'বিপদ', জেনে নিন কী কী</a>
-							</h3>
-							<span class="post-date-info">
-								<i class="fa fa-clock-o"></i>
-								dd/mm/yyyy
-							</span>
-						</div>
-					</div>
-				</div>
-				<!-- col end-->
-				<div class="col-lg-3 col-md-6">
-					<div class="ts-grid-box ts-grid-content border-style">
-						<div class="ts-post-thumb">
-							<a href="#">
-								<img class="img-fluid" src="images/news/travel/travel5.jpg" alt="">
-							</a>
-						</div>
-						<div class="post-content">
-							<a class="post-cat" href="#">রাজনীতি</a>
-							<h3 class="post-title">
-								<a href="#">শরীরে ভিটামিন B12-র ঘাটতিতে হতে পারে 'বিপদ', জেনে নিন কী কী</a>
-							</h3>
-							<span class="post-date-info">
-								<i class="fa fa-clock-o"></i>
-								dd/mm/yyyy
-							</span>
-						</div>
-					</div>
-				</div>
-				<!-- col end-->
-				<div class="col-lg-3 col-md-6">
-					<div class="ts-grid-box ts-grid-content border-style">
-						<div class="ts-post-thumb">
-							<a href="#">
-								<img class="img-fluid" src="images/news/travel/travel4.jpg" alt="">
-							</a>
-						</div>
-						<div class="post-content">
-							<a class="post-cat" href="#"> অর্থনীতি </a>
-							<h3 class="post-title">
-								<a href="#">সুস্থ্য থাকতে গড়ে তুলুন কিছু অভ্যাস, সুস্থ্য থাকতে গড়ে তুলুন কিছু অভ্যাস
-								</a>
-							</h3>
-							<span class="post-date-info">
-								<i class="fa fa-clock-o"></i>
-								dd/mm/yyyy
-							</span>
-						</div>
-					</div>
-				</div>
-				<!-- col end-->
-				<div class="col-lg-3 col-md-6">
-					<div class="ts-grid-box ts-grid-content border-style">
-						<div class="ts-post-thumb">
-							<a href="#">
-								<img class="img-fluid" src="images/news/travel/travel8.jpg" alt="">
-							</a>
-						</div>
-						<div class="post-content">
-							<a class="post-cat" href="#">সামাজিক</a>
-							<h3 class="post-title">
-								<a href="#">সুস্থ্য থাকতে গড়ে তুলুন কিছু অভ্যাস , সুস্থ্য থাকতে গড়ে তুলুন কিছু
-									অভ্যাস</a>
-							</h3>
-							<span class="post-date-info">
-								<i class="fa fa-clock-o"></i>
-								dd/mm/yyyy
-							</span>
-						</div>
-					</div>
-				</div>
-				<!-- col end-->
-			</div>
-		</div>
-	</section>
-
-	<!-- Watch Now -->
-	<section class="block-wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="ts-grid-box watch-post mb-30">
-						<h2 class="ts-title"> বিনোদন </h2>
-						<div class="row">
-							<div class="col-lg-7">
-								<div class="tab-content featured-post" id="nav-tabContent">
-									<div class="tab-pane ts-overlay-style fade show active" id="nav-home"
-										role="tabpanel" aria-labelledby="nav-home-tab">
-										<div class="item" style="background-image: url(images/news/travel/travel2.jpg)">
-
-											<a class="post-cat ts-orange-bg" href="#"> নাটক </a>
-											<a href="https://www.youtube.com/watch?v=_0UO1NcheAE" class="ts-video-btn">
-												<i class="fa fa-play-circle-o"></i>
-											</a>
-											<div class="overlay-post-content">
-												<div class="post-content">
-													<h3 class="post-title md">
-														<a href="#"> আইপিএল সবার আগে প্লে–অফে পান্ডিয়ার গুজরাট </a>
-													</h3>
-													<ul class="post-meta-info">
-														<li class="author">
-															<a href="#">
-																<img src="images/avater/author1.jpg" alt="">লেখক
-															</a>
-														</li>
-														<li>
-															<i class="fa fa-clock-o"></i>
-															দিন/মাস/বছর
-														</li>
-														<li class="active">
-															<i class="icon-fire"></i>
-															২০০৪
-														</li>
-													</ul>
-												</div>
-											</div>
-											<!-- overlay post content-->
-										</div>
-										<!-- item end-->
-									</div>
-									<!--tab-pane ts-overlay-style end-->
-									<div class="tab-pane ts-overlay-style fade" id="nav-profile" role="tabpanel"
-										aria-labelledby="nav-profile-tab">
-										<div class="item" style="background-image: url(images/news/health/health2.jpg)">
-
-											<a class="post-cat ts-purple-bg" href="#">Health</a>
-											<a href="https://www.youtube.com/watch?v=_0UO1NcheAE" class="ts-video-btn">
-												<i class="fa fa-play-circle-o"></i>
-											</a>
-											<div class="overlay-post-content">
-												<div class="post-content">
-													<h3 class="post-title md">
-														<a href="#"> আইপিএল সবার আগে প্লে–অফে পান্ডিয়ার গুজরাট </a>
-													</h3>
-													<ul class="post-meta-info">
-														<li class="author">
-															<a href="#">
-																<img src="images/avater/author1.jpg" alt=""> লেখক
-															</a>
-														</li>
-														<li>
-															<i class="fa fa-clock-o"></i>
-															দিন/মাস/বছর
-														</li>
-														<li class="active">
-															<i class="icon-fire"></i>
-															3300
-														</li>
-													</ul>
-												</div>
-											</div>
-											<!-- overlay post content-->
-										</div>
-										<!-- item end-->
-									</div>
-									<!--tab-pane ts-overlay-style end-->
-									<div class="tab-pane ts-overlay-style fade" id="nav-contact" role="tabpanel"
-										aria-labelledby="nav-contact-tab">
-										<div class="item"
-											style="background-image: url(images/news/fashion/fashion1.jpg)">
-											<a class="post-cat ts-pink-bg" href="#">Fashion</a>
-											<a href="https://www.youtube.com/watch?v=_0UO1NcheAE" class="ts-video-btn">
-												<i class="fa fa-play-circle-o"></i>
-											</a>
-											<div class="overlay-post-content">
-												<div class="post-content">
-													<h3 class="post-title md">
-														<a href="#">পিসিএ এক বিবৃতিতে জানিয়েছে, ‘গ্রাহাম থর্প গুরুতর
-															অসুস্থ হয়ে হাসপাতালে ভর্তি। আমাদের সমবেদনা তাঁর ও তাঁর
-															পরিবারের প্রতি। তবে</a>
-													</h3>
-													<ul class="post-meta-info">
-														<li class="author">
-															<a href="#">
-																<img src="images/avater/author1.jpg" alt=""> লেখক
-															</a>
-														</li>
-														<li>
-															<i class="fa fa-clock-o"></i>
-															দিন/মাস/বছর
-														</li>
-														<li class="active">
-															<i class="icon-fire"></i>
-															৪৪৫
-														</li>
-													</ul>
-												</div>
-											</div>
-											<!-- overlay post content-->
-										</div>
-										<!-- item end-->
-									</div>
-									<!--tab-pane ts-overlay-style end-->
-								</div>
-
-							</div>
-							<!-- col end-->
-
-							<div class="col-lg-5">
-								<div class="nav post-list-box" id="nav-tab" role="tablist">
-									<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
-										href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
-										<div class="post-content media">
-											<img class="d-flex" src="images/news/travel/travel2.jpg" alt="">
-											<div class="media-body align-self-center">
-												<h4 class="post-title">
-													আইপিএল সবার আগে প্লে–অফে পান্ডিয়ার গুজরাট
-												</h4>
-												<span class="post-date-info">
-													<i class="fa fa-clock-o"></i>
-													দিন/মাস/বছর
-												</span>
-											</div>
-										</div>
-									</a>
-									<!-- nav item end-->
-									<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
-										href="#nav-profile" role="tab" aria-controls="nav-profile"
-										aria-selected="false">
-										<div class="post-content media">
-											<img class="d-flex" src="images/news/health/health2.jpg" alt="">
-											<div class="media-body align-self-center">
-												<h4 class="post-title">
-													আইপিএল সবার আগে প্লে–অফে পান্ডিয়ার গুজরাট
-
-												</h4>
-												<span class="post-date-info">
-													<i class="fa fa-clock-o"></i>
-													দিন/মাস/বছর
-												</span>
-											</div>
-										</div>
-									</a>
-									<!-- nav item end-->
-									<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
-										href="#nav-contact" role="tab" aria-controls="nav-contact"
-										aria-selected="false">
-										<div class="post-content media">
-											<img class="d-flex" src="images/news/fashion/fashion1.jpg" alt="">
-											<div class="media-body align-self-center">
-												<h4 class="post-title">
-													আইপিএল সবার আগে প্লে–অফে পান্ডিয়ার গুজরাট
-												</h4>
-												<span class="post-date-info">
-													<i class="fa fa-clock-o"></i>
-													দিন/মাস/বছর
-												</span>
-											</div>
-										</div>
-									</a>
-									<!-- nav item end-->
-								</div>
-								<!-- watch list post end-->
-							</div>
-							<!-- col end -->
-						</div>
-						<!-- row end-->
-					</div>
-				</div>
-
-				<!-- col end-->
-			</div>
-
-		</div>
-		<!-- container end-->
-	</section>
-	<!-- Watch Now -->
-
-
-
-	<!-- Diet & Nutriotion  -->
-	<section class="block-wrapper diet_nutrion section-bg p-30 mb-15">
-		<div class="container">
-			<div class="ts-title-item clearfix">
-				<h2 class="ts-cat-title float-left">
-					<span> স্বাস্থ্য </span>
-				</h2>
-				<div class="float-right">
-					<a href="#" class="view-all-link"> সব দেখুন </a>
-				</div>
-			</div>
-			<div class="row ts-grid-item grid-style-1">
-				<div class="col-lg-3">
-					<div class="item">
-
-						<div class="ts-post-thumb">
-							<a href="#">
-								<img class="img-fluid" src="images/news/foods/food4.jpg" alt="">
-							</a>
-							<a href="" class="post-cat"> খাদ্য </a>
-						</div>
-						<div class="post-content">
-
-							<h3 class="post-title">
-								<a href="#"> আইপিএল সবার আগে প্লে–অফে পান্ডিয়ার গুজরাট</a>
-							</h3>
-							<span class="post-date-info">
-								<i class="fa fa-clock-o"></i>
-								১০ মে ২০২২
-							</span>
-						</div>
-					</div>
-					<!-- item end-->
-				</div>
-				<!-- end col-->
-				<div class="col-lg-3">
-					<div class="item">
-
-						<div class="ts-post-thumb">
-							<a href="#">
-								<img class="img-fluid" src="images/news/health/health6.jpg" alt="">
-							</a>
-							<a href="" class="post-cat">শরীর চর্চা </a>
-						</div>
-						<div class="post-content">
-
-							<h3 class="post-title">
-								<a href="#"> পিসিএ এক বিবৃতিতে জানিয়েছে, ‘গ্রাহাম থর্প
-								</a>
-							</h3>
-							<span class="post-date-info">
-								<i class="fa fa-clock-o"></i>
-								১০ মে ২০২২
-							</span>
-						</div>
-					</div>
-					<!-- item end-->
-				</div>
-				<!-- end col-->
-				<div class="col-lg-3">
-					<div class="item">
-
-						<div class="ts-post-thumb">
-							<a href="#">
-								<img class="img-fluid" src="images/news/health/health7.jpg" alt="">
-							</a>
-							<a href="" class="post-cat">স্বাস্থ্য</a>
-						</div>
-						<div class="post-content">
-
-							<h3 class="post-title">
-								<a href="#"> গুরুতর অসুস্থ হয়ে হাসপাতালে ভর্তি। আমাদের সমবেদনা তাঁর ও তাঁর পরিবারের
-
-								</a>
-							</h3>
-							<span class="post-date-info">
-								<i class="fa fa-clock-o"></i>
-								১০ মে ২০২২
-							</span>
-						</div>
-					</div>
-					<!-- item end-->
-				</div>
-				<!-- end col-->
-				<div class="col-lg-3">
-					<div class="item">
-
-						<div class="ts-post-thumb">
-							<a href="#">
-								<img class="img-fluid" src="images/news/health/health8.jpg" alt="">
-							</a>
-							<a href="" class="post-cat">খাদ্যভাস</a>
-						</div>
-						<div class="post-content">
-
-							<h3 class="post-title">
-								<a href="#"> গুরুতর অসুস্থ হয়ে হাসপাতালে ভর্তি। আমাদের সমবেদনা তাঁর ও তাঁর পরিবারের
-									প্রতি। তবে
-								</a>
-							</h3>
-							<span class="post-date-info">
-								<i class="fa fa-clock-o"></i>
-								১০ মে ২০২২
-							</span>
-						</div>
-					</div>
-					<!-- item end-->
-				</div>
-				<!-- end col-->
-			</div>
-		</div>
-	</section>
-	<!-- Diet & Nutriotion  -->
-
-	<!-- Device  -->
-	<section class="block-wrapper p-30">
-		<div class="container">
-			<div class="ts-heading clearfix">
-				<h2 class="ts-title float-left">
-					সাহিত্য
-				</h2>
-			</div>
-			<div class="row post-category-item">
-				<div class="col-lg-3">
-					<div class="ts-overlay-style featured-post overlay-heighlight-green mb-30">
-						<div class="item" style="background-image:url(news-img/book.jpg)">
-							<a class="post-cat  " href="#"> বই </a>
-							<div class="overlay-post-content">
-								<div class="post-content">
-									<h2 class="post-title">
-										<a href="#"> আইপিএল সবার আগে প্লে–অফে পান্ডিয়ার গুজরাট</a>
-									</h2>
-									<span class="post-date-info">
-										<i class="fa fa-clock-o"></i>
-										১০ মে ২০২২
-									</span>
-								</div>
-							</div>
-							<!--/ Featured post end -->
-						</div>
-					</div>
-				</div>
-				<!-- col end-->
-				<div class="col-lg-3">
-					<div class="ts-overlay-style featured-post overlay-heighlight-blue-dark mb-30">
-						<div class="item" style="background-image:url(images/news/tech/tech4.jpg)">
-							<a class="post-cat  " href="#">গেজেট</a>
-							<div class="overlay-post-content">
-								<div class="post-content">
-									<h2 class="post-title">
-										<a href="#"> গুরুতর অসুস্থ হয়ে হাসপাতালে ভর্তি। আমাদের সমবেদনা</a>
-									</h2>
-									<span class="post-date-info">
-										<i class="fa fa-clock-o"></i>
-										১০ মে ২০২২
-									</span>
-								</div>
-							</div>
-							<!--/ Featured post end -->
-						</div>
-					</div>
-				</div>
-				<!-- col end-->
-				<div class="col-lg-3">
-					<div class="ts-overlay-style featured-post overlay-heighlight-blue mb-30">
-						<div class="item" style="background-image:url(images/news/tech/tech1.jpg)">
-							<a class="post-cat  " href="#">ক্যামরা</a>
-							<div class="overlay-post-content">
-								<div class="post-content">
-									<h2 class="post-title">
-										<a href="#"> আইপিএল সবার আগে প্লে–অফে পান্ডিয়ার গুজরাট</a>
-									</h2>
-									<span class="post-date-info">
-										<i class="fa fa-clock-o"></i>
-										১০ মে ২০২২
-									</span>
-								</div>
-							</div>
-							<!--/ Featured post end -->
-						</div>
-					</div>
-				</div>
-				<!-- col end-->
-				<div class="col-lg-3">
-					<div class="ts-overlay-style featured-post overlay-heighlight-yellow mb-30">
-						<div class="item" style="background-image:url(images/news/tech/tech2.jpg)">
-							<a class="post-cat  " href="#">গেজেট</a>
-							<div class="overlay-post-content">
-								<div class="post-content">
-									<h2 class="post-title">
-										<a href="#"> আইপিএল সবার আগে প্লে–অফে পান্ডিয়ার গুজরাট</a>
-									</h2>
-									<span class="post-date-info">
-										<i class="fa fa-clock-o"></i>
-										১০ মে ২০২২
-									</span>
-								</div>
-							</div>
-							<!--/ Featured post end -->
-						</div>
-					</div>
-				</div>
-				<!-- col end-->
-			</div>
-		</div>
-	</section>
-	<!-- Device  -->
 
 	<!-- footer start -->
 	<footer class="ts-footer ts-footer-4 ts-footer-5">
@@ -3952,7 +3437,7 @@
 
 						</div>
 						<p>
-							অফিসের ঠিকানা
+							ঠিকানা: ৩৬, বোরহানবাগ, শিবগঞ্জ, সিলেট।
 						</p>
 						<ul class="footer-social-list">
 							<li class="ts-facebook">
@@ -3994,7 +3479,7 @@
 							<button class="btn btn-primary" name="subscribe" type="submit">Subscribe</button>
 						</form> -->
 						<p>
-							সম্পাদক:
+							সম্পাদক ও প্রকাশক: এড. সামসুজ্জামান জামান
 						</p>
 						<p>
 							সহ-সম্পাদক:
@@ -4018,7 +3503,9 @@
 				<div class="col-md-12">
 					<div class="copyright-text text-center">
 						<p>পোর্টাল তৈরি ও তত্ত্বাবধানে -
-							<a href="#"> <img src="news-img/download.png"> আইটি ল্যাব সলিউশন্স লি. </a>
+							<a target="_blank" href="https://www.itlabsolutions.com/"> <img src="news-img/download.png">
+								আইটি ল্যাব
+								সলিউশন্স লি. </a>
 						</p>
 					</div>
 				</div>
@@ -4081,6 +3568,11 @@
 
 	<!-- smooth scroling -->
 	<script src="js/smoothscroll.js"></script>
+
+	<script src="lightBox/lg-fullscreen.min.js"></script>
+	<script src="lightBox/lg-thumbnail.min.js"></script>
+	<script src="lightBox/lightgallery.min.js"></script>
+
 
 	<script src="js/main.js"></script>
 
