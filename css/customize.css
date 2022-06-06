@@ -359,7 +359,7 @@ body.light .progress-wrap svg.progress-circle path {
 }
 
 .post-managed .post-content {
-  padding: 12px 0px 10px 0px !important;
+  padding: 15px 0px 10px 0px !important;
 }
 
 .district-3.news-box-4 .ts-cat-title span:before {
@@ -374,7 +374,7 @@ body.light .progress-wrap svg.progress-circle path {
 
 /* free Comments */
 .content_box {
-  padding: 10px 0px;
+  padding: 20px 0px;
   border-bottom: 1px solid #ddd;
 }
 
