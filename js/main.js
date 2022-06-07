@@ -287,7 +287,7 @@ $(function ($) {
             autoplayHoverPause: true,
             mouseDrag: false,
             touchDrag: false,
-            margin: 30,
+            margin: 15,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
             responsive: {
                 // breakpoint from 0 up

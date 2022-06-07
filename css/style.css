@@ -63,6 +63,8 @@ body {
   --black-blue-light-2: #404255;
   --black-blue-light-3: #4b4d64;
   --black-light: #424455;
+  --primary-color: #1B1464;
+  --secondery-color: #e5e5e5;
   overflow-x: hidden;
 }
 
@@ -326,7 +328,7 @@ section,
   background: #4ab106;
 }
 
-.ts-blue-bg {
+.ts-blue-bg ndery-bg {
   background: #007dff;
 }
 
@@ -348,6 +350,10 @@ section,
 
 .ts-orange-bg {
   background: #ff6e0d;
+}
+
+.ts-secondery-bg {
+  background: #C4161C;
 }
 
 .ts-purple-bg {
@@ -391,18 +397,21 @@ section,
 .ts-title {
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   position: relative;
+  background: var(--secondery-color);
+  padding: 10px 20px 10px 20px;
+  color: var(--primary-color);
 }
 
 .ts-title:before {
   position: absolute;
-  left: -30px;
+  left: 0;
   top: 0;
-  width: 3px;
+  width: 4px;
   height: 100%;
   content: '';
-  background: #d72924;
+  background: var(--primary-color);
 }
 
 .ts-title.white {
@@ -413,7 +422,7 @@ section,
   font-size: 16px;
   color: #232323;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .post-title.lg {
@@ -552,7 +561,7 @@ section,
 }
 
 .post-meta-info li {
-  font-size: 13px;
+  font-size: 16px;
   display: inline-block;
   position: relative;
   margin-right: 15px;
@@ -664,8 +673,8 @@ blockquote cite:after {
 /*------------------ owl carosel ---*/
 .owl-nav {
   position: absolute;
-  right: 0;
-  top: -50px;
+  right: 10px;
+  top: -46px;
 }
 
 .owl-nav .owl-next,
@@ -702,8 +711,8 @@ blockquote cite:after {
 
 .owl-dots {
   position: absolute;
-  right: 0;
-  top: -49px;
+  right: 6px;
+  top: -46px;
   z-index: 1;
 }
 
@@ -711,7 +720,7 @@ blockquote cite:after {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #d72924;
+  background: var(--primary-color);
   display: inline-block;
   opacity: 1;
   margin: 0 3px;
@@ -1237,7 +1246,7 @@ blockquote cite:after {
 
 .header-default {
   position: relative;
-  background: #d72924;
+  background: #1B1464;
 
 }
 
@@ -1261,7 +1270,7 @@ blockquote cite:after {
 .navigation {
   height: 60px;
   display: block;
-  background-color: #d72924;
+  background-color: #1B1464;
 }
 
 .nav-menu {
@@ -1300,7 +1309,7 @@ blockquote cite:after {
 }
 
 .nav-menu>li>a:hover {
-  background: #c2211c;
+  background: #373172;
   color: #fff !important;
 }
 
@@ -1311,11 +1320,11 @@ blockquote cite:after {
 
 .nav-menu>li.focus>a {
   color: #fff;
-  background: #c2211c;
+  background: #373172;
 }
 
 .>li.active>a {
-  background: #c2211c;
+  background: #373172;
   color: #fff;
 }
 
@@ -1429,7 +1438,7 @@ blockquote cite:after {
   color: #fff;
   font-size: 17px;
   width: 60px;
-  background: #d72924;
+  background: #1B1464;
 }
 
 .right-menu .nav-search-inner input[type=text],
@@ -1824,7 +1833,7 @@ blockquote cite:after {
 .post-content {
   z-index: 1;
   position: relative;
-  padding: 0px 8px;
+  padding: 2px 8px;
 }
 
 .post-content p {
@@ -1909,25 +1918,21 @@ blockquote cite:after {
 }
 
 .post-date-info {
-  font-size: 12px;
+  font-size: 14px;
   display: block;
   position: relative;
-  color: #8a8a8a;
+  color: var(--black-blue-light);
+  font-weight: 500;
 }
 
 /*--------- single post ---*/
 .ts-grid-box {
   position: relative;
-  margin-bottom: 30px;
-  padding: 30px;
+  margin-bottom: 20px;
+  padding: 8px;
   background: #fff;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
-  /*.post-content{
-        padding: 20px;
-        background: $white-color;
-        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
-      }*/
 }
 
 .ts-grid-box.ts-grid-content {
@@ -1937,7 +1942,7 @@ blockquote cite:after {
 }
 
 .ts-grid-box.ts-grid-content .post-content {
-  padding: 0 20px 18px 20px;
+  padding: 0 20px 34px 20px;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
 }
@@ -1968,7 +1973,7 @@ blockquote cite:after {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   min-height: 10px;
 }
 
@@ -2108,7 +2113,8 @@ blockquote cite:after {
 }
 
 .post-list-item .nav-tabs li a.active {
-  color: #6200ee;
+  color: var(--primary-color);
+  background: var(--secondery-color);
 }
 
 .post-list-item .nav-tabs li a.active::before {
@@ -2130,7 +2136,7 @@ blockquote cite:after {
 /*---------- tab list -----*/
 .post-tab-list {
   margin-bottom: 0;
-  padding: 15px;
+  padding: 0 0 8px 0;
 }
 
 .post-tab-list .post-content.media {
@@ -2156,7 +2162,7 @@ blockquote cite:after {
 }
 
 .post-tab-list .post-tag a {
-  font-size: 11px;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -2340,20 +2346,20 @@ img.sidebar-img {
 /*---------------------------------
     tranding post
 ------------------------------------*/
-.ts-grid-box.ts-col-box {
+/* .ts-grid-box.ts-col-box {
   padding: 40px 15px 22px 20px;
-}
+} */
 
 .ts-grid-box.ts-col-box .post-cat {
   margin-left: 0;
 }
 
-.ts-grid-box.ts-col-box .ts-title:before {
+/* .ts-grid-box.ts-col-box .ts-title:before {
   left: -15px;
-}
+} */
 
 .ts-grid-box.ts-col-box .item {
-  margin-bottom: 26px;
+  margin-bottom: 12px;
 }
 
 .ts-grid-box.ts-col-box .item:last-of-type {
@@ -2369,7 +2375,7 @@ img.sidebar-img {
 }
 
 .ts-tranding-post {
-  padding: 30px 0 0 0;
+  /* padding: 30px 0 0 0; */
 }
 
 .ts-tranding-post .ts-post-thumb {
@@ -2377,13 +2383,13 @@ img.sidebar-img {
 }
 
 .ts-tranding-post .ts-title {
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 
 .ts-tranding-post .ts-arrow {
   position: absolute;
   right: 15px;
-  top: 28px;
+  top: 18px;
 }
 
 .ts-tranding-post .ts-arrow a {
@@ -4095,8 +4101,8 @@ comments-form
 }
 
 .ts-list-post-box.ts-grid-content .post-content {
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   -webkit-box-shadow: none;
   box-shadow: none;
   border-bottom: 1px solid #f0f1f4;
@@ -4211,7 +4217,7 @@ comments-form
 }
 
 .category-style .ts-col-box.ts-grid-box {
-  padding: 30px 15px 22px;
+  /* padding: 30px 15px 22px; */
 }
 
 .category-style .ts-col-box.ts-grid-box .post-cat {
@@ -4444,7 +4450,7 @@ comments-form
 /*---------- ts-title-item -------------*/
 .ts-title-item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .ts-title-item .view-all-link {
@@ -4471,8 +4477,8 @@ comments-form
 
 .ts-cat-title span {
   position: relative;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 700;
   background: #d72924;
   color: #fff;
   line-height: 26px;
