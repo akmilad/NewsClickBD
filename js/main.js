@@ -281,9 +281,9 @@ $(function ($) {
     if ($('.most-populers').length > 0) {
         $('.most-populers').owlCarousel({
             items: 4,
-            dots: true,
+            dots: false,
             loop: true,
-            nav: false,
+            nav: true,
             autoplayHoverPause: true,
             mouseDrag: false,
             touchDrag: false,
@@ -292,7 +292,7 @@ $(function ($) {
             responsive: {
                 // breakpoint from 0 up
                 0: {
-                    items: 1,
+                    items: 2,
                 },
                 // breakpoint from 480 up
                 480: {
