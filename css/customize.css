@@ -332,7 +332,7 @@ body.light .progress-wrap svg.progress-circle path {
   left: 41%;
 }
 
-.video_slide .post-title a {
+.video_slide_bg .post-title a {
   color: #fff;
 }
 
@@ -566,7 +566,7 @@ img {
   position: relative;
 }
 
-.video_slide .ts-title {
+.video_slide_bg .ts-title {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -576,7 +576,7 @@ img {
   color: var(--white);
 }
 
-.video_slide .ts-title:before {
+.video_slide_bg .ts-title:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -586,12 +586,12 @@ img {
   background: var(--white);
 }
 
-.video_slide .owl-nav .owl-next i,
-.owl-nav .owl-prev i {
+.video_slide_bg .owl-nav .owl-next i,
+.video_slide_bg .owl-nav .owl-prev i {
   color: #fff;
 }
 
-.video_slide::before {
+.video_slide_bg::before {
   content: '';
   display: block;
   position: absolute;
